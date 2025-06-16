@@ -48,7 +48,7 @@ function getBotResponse(input) {
 
   // 5) ¿Tengo tarea?
   if (input.includes("tarea")) {
-    return "Tienes una exposición en el curso de Creatividad.";
+    return "Tienes una exposición en el curso de Gestión de la Creatividad.";
   }
 
   // 6) ¿Tengo exámenes?
@@ -57,13 +57,13 @@ if (input.includes("examen") || input.includes("examenes")) {
 }
 
 // 7) Tengo algo más?
-if (input.includes("más")) {
+if (input.includes("algo más")) {
     return "No presentas más examenes para esta semana. No hay tareas pendientes."
 }
 
 // 8) Qué clases tengo hoy?
 if (input.includes("clases")) {
-    return "Hoy tienes clases de Negocios de 6pm a 8pm. Luego, clases de creatividad a las 8pm."
+    return "Hoy tienes clases de Negocios de 6pm a 8pm. Luego, clases de Gestión de la creatividad a las 8pm con el profesor Erick Cordova."
 }
 
   // 9) Fallback
