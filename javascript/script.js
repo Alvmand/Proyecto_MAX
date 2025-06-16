@@ -38,7 +38,7 @@ function getBotResponse(input) {
 
   // 3) Creatividad
   if (input.includes("creatividad")) {
-    return "Tu curso de Creatividad es los lunes a las 3 pm.";
+    return "Tu curso de Creatividad es los lunes a las 8 pm.";
   }
 
   // 4) Programación
@@ -61,7 +61,12 @@ if (input.includes("más")) {
     return "No presentas más examenes para esta semana. No hay tareas pendientes."
 }
 
-  // 7) Fallback
+// 8) Qué clases tengo hoy?
+if (input.includes("clases")) {
+    return "Hoy tienes clases de Negocios de 6pm a 8pm. Luego, clases de creatividad a las 8pm."
+}
+
+  // 9) Fallback
   return "Lo siento, no entendí tu pregunta.";
 }
 
